@@ -152,9 +152,11 @@ class ViewController: UIViewController {
         if tf.text?.count ?? 0 > 4 && confirmTf.text?.count ?? 0 > 4 && tf.text == confirmTf.text {
             validate(tf, confirmTf, "")
             continueBtn.isEnabled = true
+            continueBtn.backgroundColor = .systemPink
         } else {
             validate(tf, confirmTf, "Please, fill the field!")
             continueBtn.isEnabled = false
+            continueBtn.backgroundColor = .darkGray
         }
     }
     
